@@ -18,6 +18,11 @@
     font-size: 1rem;
 
 }
+body{
+    max-width: 1600px;
+    width:100%;
+    margin:0 auto;
+}
 
 /* navbar style */
 nav{
@@ -63,10 +68,12 @@ nav{
 /* header style */
 .container {
     position:relative;
-    display: block;
     width: 1600px;
     width:100%;
             
+}
+.container img{
+    display: block;
 }
 .hero-bg{
     background-size: cover;
@@ -151,7 +158,61 @@ nav{
     align-items: center;
     gap:0.5rem;
 }
-
+/* section 1 */
+.section-1-container{
+    background-color: #1A0B2E;
+    max-width: 1600px;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 3.13rem;
+    padding-bottom: 7.5rem;
+}
+.section-1{
+    max-width: 1200px;
+    width:100%;
+    margin:0 auto;
+}
+.section-1  h3{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.section-1 p{
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 300;
+}
+.p1{
+    margin-bottom: 3.75rem;
+}
+.p2{
+    margin-bottom: 4.97rem;
+}
+hr{
+    border:none;
+    height: 0.12rem;
+    background-color: #483e55;
+}
+.card{
+    margin-top: 5.03rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    gap:5rem;
+}
+/* .cards{
+    border:1px solid #00FF88;
+} */
+.cards h2{
+    color: #00FF88;
+    font-size: 3rem;
+}
+.cards p{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 1rem;
+}
 /* responsive brekpoints */
 
 @media screen  and (max-width:576px){
@@ -173,32 +234,57 @@ nav{
     }
     .hamburger img{
         display: block;
+        margin-left: 18rem;
     } 
     .new{
-    font-size: 0.5rem;
-    padding:0.3rem 0.8rem;
+    font-size: 0.4rem;
+    padding:0.2rem 0.7rem;
     }
     .header-content {
-    width:24.38rem;
-    height: 5.56rem;
+    width:22.38rem;
+    height: 3.56rem;
     }
     .header-content h2{
     margin-top: 0.5rem;
-    font-size: 2.2rem;
+    font-size: 2rem;
     }
     .header-content p{
     font-size: 0.5rem;
     margin-top: 0.1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     }
     .Subscribe{
-    font-size: 0.6rem;
-    padding: 0.5rem 1rem;
+    font-size: 0.4rem;
+    padding: 0.3rem 0.5rem;
     }
     .button{
-    padding: 0.5rem 1rem;
-    font-size: 0.6rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.5rem;
 
+    }
+    .section-1{
+    width:100%;
+    margin:0 auto;
+    }
+    .section-1  h3{
+    font-size: 2rem;
+    }
+    .section-1 p{
+    font-size: 0.8rem;
+    }
+    .p1{
+    margin-bottom: 2rem;
+    }
+    .p2{
+    margin-bottom: 2.97rem;
+    }
+    .card{
+    margin-top: 3.03rem;
+    grid-template-columns: repeat(2,1fr);
+    gap:2rem;
+    }
+    .cards h2{
+    font-size: 2.5rem;
     }
     
 }
