@@ -452,6 +452,7 @@ footer{
 /* responsive brekpoints */
 
 @media screen  and (max-width:576px){
+   
     .navbar{
         margin-left: 1rem ;
         margin-bottom: 1rem;
@@ -469,20 +470,31 @@ footer{
         display:none;
     }
     .hamburger img{
-        display: block;
+        display: inline-block;
         margin-left: 10rem;
         margin-right: 7rem;
     } 
     .new{
-    font-size: 0.4rem;
-    padding:0.2rem 0.7rem;
+    top: 14%;
+    left:66%;
+    font-size: 1rem;
+    padding: 0.4rem 0.9rem;
+    }
+     .hero-bg{
+    height: 466px;
+    }
+    .hero-circle {
+    width:53%;
+    }
+    .microphone{
+    width:15%;
     }
     .header-content {
     width:22.38rem;
     height: 3.56rem;
     }
     .header-content h2{
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     font-size: 2.5rem;
     }
     .header-content p{
