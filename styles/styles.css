@@ -16,7 +16,13 @@
     color: #FFFFFF;
     font-weight: 600;
     font-size: 1rem;
+    transition: transform .3s ease;
 
+}
+button:hover{
+    cursor: pointer;
+    background-color: peachpuff;
+    transform: scale(1.1);
 }
 body{
     max-width: 1600px;
@@ -464,7 +470,7 @@ footer{
     }
     .hamburger img{
         display: block;
-        margin-left: 18rem;
+        margin-left: 13rem;
     } 
     .new{
     font-size: 0.4rem;
