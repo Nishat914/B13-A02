@@ -76,8 +76,6 @@ nav{
     display: block;
 }
 .hero-bg{
-    background-size: cover;
-    background-position: center;
     width:100%;
     height: auto;
     object-fit: cover;
@@ -395,6 +393,57 @@ hr{
     padding:1rem ;
     overflow:visible;
 }
+/* footer */
+footer{
+    max-width: 1600px;
+}
+.footer{
+    position:relative;
+    max-width: 1600px;
+    color:#FFFFFF;
+}
+.footer-bg{
+    width: 100%;
+    display: block;
+}
+.footer-content{
+    position:absolute;
+    left:52%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-icon{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:2.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.icon-flex{
+    display: flex;
+    gap:0.38rem;
+}
+.icon-flex img{
+    width: 24px;
+    height: 24px;
+}
+.footer-content h3{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.footer-content span{
+    background: linear-gradient(45deg,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+    background-clip: text;
+    color: transparent;
+}
+.footer-icon p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+ 
 /* responsive brekpoints */
 
 @media screen  and (max-width:576px){
@@ -537,5 +586,33 @@ hr{
     text-align: center;
     margin-left: 5.25rem;
     }
+    .footer-content h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    }
+    .icon-flex{
+    gap:0.2rem;
+    }
+    .footer-icon{
+    grid-template-columns: repeat(2,1fr);
+    gap:1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    }
+    .footer-bg{
+        height: 248px;
+    }
+    .copyright{
+        text-wrap: nowrap;
+    }
+    .footer-icon p{
+    font-size: 0.8rem;
+    font-weight: 300;
+    }
+    .icon-flex img{
+    width: 20px;
+    height: 20px;
+    }
+
 }
 
