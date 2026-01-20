@@ -27,7 +27,6 @@ body{
 /* navbar style */
 nav{
     max-width:1600px;
-    max-height: 92px;
     width: 100%;
     background-color: #1A0B2E;
     border-bottom: 1px solid #483e55;
@@ -584,7 +583,7 @@ footer{
     }
     .host-icon{
     text-align: center;
-    margin-left: 5.25rem;
+    margin-left: 10%;
     }
     .footer-content h3{
     font-size: 2.5rem;
@@ -613,6 +612,84 @@ footer{
     width: 20px;
     height: 20px;
     }
+
+}
+
+@media screen  and (min-width:576px)and (max-width:992px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar-menu{
+        gap:3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+    }
+    .hero-circle {
+    width:25%;
+    }
+    .new{
+    font-size: 0.9rem;
+    padding:0.3rem 0.7rem;
+    }
+    .header-content{
+        top:75%;
+    }
+    .header-content h2{ 
+    font-size: 3rem;
+    }
+    .section-1-container{
+    padding-top: 7.5rem;
+    }
+    .card{
+    grid-template-columns: repeat(2,1fr);
+    gap:6.5rem;
+    }
+    .choose-cards{
+    grid-template-columns: repeat(1,1fr);
+    gap:1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    }
+    .episodes-cards{
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
+    }
+    .host-details{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    }
+    .footer-bg{
+        height: 248px;
+    }
+    
+}
+@media screen  and (min-width:992px)and (max-width:1250px){
+     .navbar{
+        flex-direction: column;
+    }
+    .navbar-menu{
+        gap:3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+    }
+    .choose-cards{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    }
+    .episodes-cards{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+    }
+    .host-details{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    }
+
 
 }
 
